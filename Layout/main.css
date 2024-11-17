@@ -1,0 +1,226 @@
+/* General Body and Layout Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container for Main Content */
+.container {
+    margin-top: 80px; /* Offset the fixed navbar */
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    background-color: #343a40;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #3498db;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Make the page content look better with some spacing */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+/* Styles for tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: 100px; /* Adjust top margin for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .sidebar a {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+/* General Styles for the Section */
+#item-analysis {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#item-analysis h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table Styles */
+#item-analysis .table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#item-analysis .table th,
+#item-analysis .table td {
+    text-align: center;
+    padding: 12px;
+}
+
+#item-analysis .table th {
+    background-color: #f1f1f1;
+    color: #333333;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+#item-analysis .table td {
+    font-size: 1rem;
+    color: #666666;
+}
+
+#item-analysis .table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Chart Styles */
+#item-analysis canvas {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #item-analysis h2 {
+        font-size: 1.5rem;
+    }
+
+    #item-analysis .table th,
+    #item-analysis .table td {
+        font-size: 0.9rem;
+    }
+}

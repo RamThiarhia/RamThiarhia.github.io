@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-group input {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+/* Modal Buttons */
+.close {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .form-group input {
+        font-size: 0.9rem;
+    }
+}

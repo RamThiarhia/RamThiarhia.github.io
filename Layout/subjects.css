@@ -1,0 +1,195 @@
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+#course-name{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #3498db;  /* Default background color for buttons */
+    color: white !important; /* Ensure text is always white */
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-btn {
+    background-color: #3498db !important;
+}
+
+.back-btn:hover {
+    background-color: #2c7abf !important;
+}
+
+/* Add Button */
+.add-btn {
+    background-color: #cdd021 !important;
+    margin-left: 20px;
+}
+
+.add-btn:hover {
+    background-color: #cdd021 !important;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #cdd021 !important;
+}
+
+.submit-btn:hover {
+    background-color: #cdd021 !important;
+}
+
+/* Subject Cards */
+.subject-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for better card responsiveness */
+    gap: 20px;
+    padding: 0 10px;
+    margin-top: 30px; /* Adding space between the buttons and cards */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Use a modern font for the card text */
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #010101; /* Blue for the subject name */
+    font-family: 'Poppins', sans-serif; /* Stylish font for the subject name */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card .reference-id {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .subject-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Make cards smaller on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading font size for smaller screens */
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button font size on smaller screens */
+        padding: 8px 16px;
+    }
+
+    .modal-content {
+        width: 90%; /* Make modal width more flexible on mobile */
+    }
+}
+
+.remove-btn {
+    background-color: red !important;
+    color: white !important;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: darkred !important;
+}
+
+

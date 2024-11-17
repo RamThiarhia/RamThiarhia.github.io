@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Section Styling */
+#courses {
+    padding: 40px 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#courses h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 30px;
+    color: #333 !important;
+}
+
+/* Course Cards Layout */
+.course-cards {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 30px !important;
+}
+
+/* Card Styling */
+.card {
+    display: flex !important;
+    flex-direction: column !important; /* Stack content vertically */
+    justify-content: space-between !important;
+    height: 100% !important; /* Ensures cards are of equal height */
+    border-radius: 8px !important;
+    border: 1px solid #ddd !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important; /* Includes padding and border in the size */
+    overflow: hidden !important; /* Keeps content within the bounds */
+}
+
+.card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px !important;
+    background-color: #f9f9f9 !important;
+    flex-grow: 1 !important; /* Makes sure the card body takes available space */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #000000 !important; /* Bootstrap primary blue color */
+    margin-bottom: 10px !important;
+}
+
+/* Card Description (Text) */
+.card-text {
+    font-size: 1rem !important;
+    color: #555 !important;
+    flex-grow: 1 !important; /* Ensures text takes up available space */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #courses h2 {
+        font-size: 2rem !important;
+    }
+
+    .card-body {
+        padding: 15px !important;
+    }
+
+    nav ul li {
+        margin: 0 15px !important;
+    }
+
+    nav ul li a {
+        font-size: 14px !important;
+    }
+}

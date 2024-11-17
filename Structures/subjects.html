@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Section</title>
+    <link rel="stylesheet" href="/Layout/subjects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div id="navbar-container"></div>
+
+    
+    <section id="subject">
+        <h2><span id="course-name"></span></h2>
+        
+        
+        <a href="/Structures/courses.html" class="btn back-btn">Back to Courses</a>
+
+        
+        <button class="btn add-btn" onclick="openModal()">Add Subject</button>
+
+        
+        <div id="subjectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h3>Add a New Subject</h3>
+                <input type="text" id="subjectName" placeholder="Enter subject name" />
+                <button class="btn submit-btn" onclick="addSubject()">Add Subject</button>
+            </div>
+        </div>
+
+        
+        <div class="subject-cards">
+            
+        </div>
+    </section>
+
+    <script src="/Scripts/script.js"></script>
+    <script src="/Scripts/navbar.js"></script>
+
+    
+    
+</body>
+</html>

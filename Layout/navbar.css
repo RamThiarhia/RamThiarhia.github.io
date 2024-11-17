@@ -1,0 +1,52 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(45deg, #d9c123, #d9c123); /* Green gradient background */
+    color: #fff; /* Default text color */
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff !important; /* White color for "Checkmate" text */
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    color: #f9f9f9 !important; /* Light text color for links */
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffdd57 !important; /* Yellow hover effect */
+}
+
+.navbar .btn-primary {
+    background-color: #ff5722; /* Vibrant orange for Logout */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: scale(1.05); /* Hover effect */
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent toggler */
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.4rem;
+    }
+}

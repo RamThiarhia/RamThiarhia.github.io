@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.question-list {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Circular Buttons for Options */
+.option {
+    display: inline-block; /* Keep inline-block to allow natural flow */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center; /* Horizontally center the text */
+    vertical-align: middle; /* Align to middle of the line */
+    line-height: 40px; /* Match line height to height for vertical centering */
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Control font size for better alignment */
+}
+
+.option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.option.selected {
+    background-color: #cdd021;
+    color: #fff;
+    border: 2px solid #cdd021;
+}
+
+/* Buttons */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Go Back Button */
+.go-back {
+    background-color: #6c757d;
+}
+
+.go-back:hover {
+    background-color: #5a6268;
+}
+
+.go-back:active {
+    background-color: #444950;
+}
